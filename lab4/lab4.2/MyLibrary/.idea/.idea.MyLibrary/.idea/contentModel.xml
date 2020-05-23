@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Lenovo\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_MyLibrary.-216986992.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lenovo\source\repos\MyLibrary" t="IncludeFlat">
+      <e p="Debug" t="ExcludeRecursive" />
+      <e p="MyLibrary" t="IncludeRecursive">
+        <e p="Debug" t="ExcludeRecursive" />
+        <e p="dllmain.cpp" t="Include" />
+        <e p="framework.h" t="Include" />
+        <e p="MyLibrary.cpp" t="Include" />
+        <e p="MyLibrary.h" t="Include" />
+        <e p="MyLibrary.vcxproj" t="IncludeRecursive" />
+        <e p="pch.cpp" t="Include" />
+        <e p="pch.h" t="Include" />
+      </e>
+      <e p="MyLibrary.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>lab4._2</RootNamespace>
+        <LangVersion>8</LangVersion>
+        <FileVersion></FileVersion>
+        <PublicSign>false</PublicSign>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU;x86;x64</Platforms>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <PlatformTarget>x64</PlatformTarget>
+      <Prefer32bit>false</Prefer32bit>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <PlatformTarget>x64</PlatformTarget>
+      <Prefer32bit>false</Prefer32bit>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="bin\x64\Debug\netcoreapp3.1\MyLibrary.dll" />
+    </ItemGroup>
+
+</Project>
