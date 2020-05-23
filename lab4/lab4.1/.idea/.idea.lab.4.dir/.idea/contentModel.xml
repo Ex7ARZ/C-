@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Lenovo\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="D:\C-\lab4\lab4.1" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="lab.4.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="lab.4.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+    </e>
+  </component>
+</project>

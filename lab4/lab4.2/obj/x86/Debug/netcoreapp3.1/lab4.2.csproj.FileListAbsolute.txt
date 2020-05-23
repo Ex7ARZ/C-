@@ -1,0 +1,13 @@
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\bin\x86\Debug\netcoreapp3.1\lab4.2.exe
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\bin\x86\Debug\netcoreapp3.1\lab4.2.deps.json
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\bin\x86\Debug\netcoreapp3.1\lab4.2.runtimeconfig.json
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\bin\x86\Debug\netcoreapp3.1\lab4.2.runtimeconfig.dev.json
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\bin\x86\Debug\netcoreapp3.1\lab4.2.dll
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\bin\x86\Debug\netcoreapp3.1\lab4.2.pdb
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.csprojAssemblyReference.cache
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.AssemblyInfoInputs.cache
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.AssemblyInfo.cs
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.dll
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.pdb
+C:\Users\Lenovo\RiderProjects\LAB3\lab4.2\obj\x86\Debug\netcoreapp3.1\lab4.2.genruntimeconfig.cache

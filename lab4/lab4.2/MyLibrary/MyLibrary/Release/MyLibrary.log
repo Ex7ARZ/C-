@@ -1,0 +1,42 @@
+﻿  pch.cpp
+  dllmain.cpp
+  MyLibrary.cpp
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(7,1): warning C4273: f1: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(12,32): message : см. предыдущее определение "f1"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(12,83): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(17,1): warning C4273: f1t: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(13,32): message : см. предыдущее определение "f1t"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(20,28): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(20,47): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(24,20): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(29,1): warning C4273: f2: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(15,32): message : см. предыдущее определение "f2"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(34,62): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(38,1): warning C4273: f2t: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(16,32): message : см. предыдущее определение "f2t"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(41,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(41,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(45,22): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(50,1): warning C4273: f3: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(18,32): message : см. предыдущее определение "f3"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(55,71): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(60,1): warning C4273: f3t: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(19,32): message : см. предыдущее определение "f3t"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(63,28): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(63,47): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(67,21): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(72,1): warning C4273: f4: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(21,32): message : см. предыдущее определение "f4"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(77,98): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(78,82): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(83,1): warning C4273: f4t: несовместимое связывание dll
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.h(22,32): message : см. предыдущее определение "f4t"
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(86,28): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(86,47): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Lenovo\source\repos\MyLibrary\MyLibrary\MyLibrary.cpp(90,21): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+     Создается библиотека C:\Users\Lenovo\source\repos\MyLibrary\Release\MyLibrary.lib и объект C:\Users\Lenovo\source\repos\MyLibrary\Release\MyLibrary.exp
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  MyLibrary.vcxproj -> C:\Users\Lenovo\source\repos\MyLibrary\Release\MyLibrary.dll
