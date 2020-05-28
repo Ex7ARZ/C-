@@ -33,10 +33,17 @@ namespace Lab7
         {
             RationalNumber result = new RationalNumber(1, 1);
 
-            if (a._m != b._m) result._m = a._m * b._m;
-            else result._m = a._m;
-            result.N = result._m/a.N + result._m/b.N;
- 
+            if (a._m != b._m) 
+            {
+                result._m = a._m * b._m;
+                result.N = a._m * b.N + a.N * b._m;
+            }
+            else
+            {
+                result._m = a._m;
+                result.N =  a.N +  b.N;
+            }
+
             return result;
         }
         public static bool operator >(RationalNumber a, RationalNumber b)
@@ -76,8 +83,9 @@ namespace Lab7
         public int CompareTo(object? obj)//сравнения для сортировки
         {
             RationalNumber p = obj as RationalNumber;
-            if (p != null)
-                return this.N/_m.CompareTo(p.N/_m);
+            if (p != null  )
+               
+                return (this.N /this._m).CompareTo(p.N /p._m);
             else
                 throw new Exception("Невозможно сравнить два объекта");
         }
