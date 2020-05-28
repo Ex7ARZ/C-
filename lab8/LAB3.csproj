@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU;x86</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Human.cs" />
+      <Compile Remove="lab4\**" />
+      <Compile Remove="testlab4\**" />
+      <Compile Remove="Lab44\**" />
+      <Compile Remove="lab.4\**" />
+      <Compile Remove="lab4.2\**" />
+      <Compile Remove="laba4.2\**" />
+      <Compile Remove="Lab7\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="lab4\**" />
+      <EmbeddedResource Remove="testlab4\**" />
+      <EmbeddedResource Remove="Lab44\**" />
+      <EmbeddedResource Remove="lab.4\**" />
+      <EmbeddedResource Remove="lab4.2\**" />
+      <EmbeddedResource Remove="laba4.2\**" />
+      <EmbeddedResource Remove="Lab7\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="lab4\**" />
+      <None Remove="testlab4\**" />
+      <None Remove="Lab44\**" />
+      <None Remove="lab.4\**" />
+      <None Remove="lab4.2\**" />
+      <None Remove="laba4.2\**" />
+      <None Remove="Lab7\**" />
+    </ItemGroup>
+
+</Project>
