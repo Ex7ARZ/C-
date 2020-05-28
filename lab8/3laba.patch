@@ -1,0 +1,300 @@
+Index: unnamed.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- unnamed.patch	(date 1585237870428)
++++ unnamed.patch	(date 1585237870428)
+@@ -0,0 +1,146 @@
++Index: LAB3.csproj
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- LAB3.csproj	(date 1584106648354)
+++++ LAB3.csproj	(date 1584106648354)
++@@ -0,0 +1,8 @@
+++<Project Sdk="Microsoft.NET.Sdk">
+++
+++    <PropertyGroup>
+++        <OutputType>Exe</OutputType>
+++        <TargetFramework>netcoreapp3.1</TargetFramework>
+++    </PropertyGroup>
+++
+++</Project>
++Index: Program.cs
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- Program.cs	(date 1584180311362)
+++++ Program.cs	(date 1584180311362)
++@@ -0,0 +1,85 @@
+++using System;
+++using System.Net.Security;
+++using System.Security.Cryptography;
+++
+++class Human
+++{
+++    private static int _id = 0;
+++    private int _age;
+++    private int _height;
+++    private int _weight;
+++    private readonly string _name;
+++    private readonly string _sex;
+++    private readonly string _country;
+++
+++    public Human(int age, int height, int weight, string name, string country, string sex)
+++    {
+++        if (age > 0) this._age = age;
+++        if (height > 0) this._height = height;
+++        if (weight > 0) this._weight = weight;
+++        this._name = name;
+++        this._country = country;
+++        this._sex = sex;
+++        _id++;
+++    }
+++
+++    public string HumanStats()
+++    {
+++        return
+++            $"Name:{_name} \n Sex:{_sex} \n Height:{_height} cm \n Weight={_weight} kg \n Age={_age} ya \n Country:{_country} \n id={_id}";
+++    }
+++
+++    public string Name => _name;
+++    public string Country => _country;
+++    public int Age => _age;
+++
+++    public void HumanStats(int height, int weight, int age)
+++    {
+++        this._height = height;
+++        this._weight = weight;
+++        this._age = age;
+++    }
+++}
+++
+++class Humanity
+++{
+++    private readonly Human _people1 = new Human(1, 2, 3, "john", "5", "1");
+++    private readonly Human _people2 = new Human(8, 8, 3, "not john", "5", "1");
+++    
+++    public void MenuStart()
+++    {
+++        bool m = true;
+++        while (m)
+++        {
+++            Console.Write("change-1\nshow human-2\nend program-3\n");
+++            var s = Console.ReadLine();
+++             var index = int.Parse(s);
+++            switch (index)
+++            {
+++                case 1:
+++                    _people1.HumanStats(20, 20, 20);
+++                    break;
+++                case 2:
+++                    Console.WriteLine(_people1.HumanStats());
+++                    Console.WriteLine(_people2.HumanStats());
+++                    break;
+++                case 3:
+++                    m = false;
+++                    break;
+++                
+++            }
+++        }
+++    }
+++}
+++
+++namespace LAB3
+++{
+++    class Program
+++    {
+++        static void Main(string[] args)
+++        {
+++            Humanity first = new Humanity();
+++            first.MenuStart();
+++        }
+++    }
+++}
++\ No newline at end of file
++Index: LAB3.sln
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- LAB3.sln	(date 1584106649871)
+++++ LAB3.sln	(date 1584106649871)
++@@ -0,0 +1,16 @@
+++
+++Microsoft Visual Studio Solution File, Format Version 12.00
+++Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB3", "LAB3.csproj", "{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}"
+++EndProject
+++Global
+++	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+++		Debug|Any CPU = Debug|Any CPU
+++		Release|Any CPU = Release|Any CPU
+++	EndGlobalSection
+++	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Release|Any CPU.Build.0 = Release|Any CPU
+++	EndGlobalSection
+++EndGlobal
++Index: .gitignore
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .gitignore	(date 1584106653200)
+++++ .gitignore	(date 1584106653200)
++@@ -0,0 +1,3 @@
+++bin/
+++obj/
+++/packages/
++\ No newline at end of file
+Index: LAB3.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- LAB3.csproj	(date 1584106648354)
++++ LAB3.csproj	(date 1584106648354)
+@@ -0,0 +1,8 @@
++<Project Sdk="Microsoft.NET.Sdk">
++
++    <PropertyGroup>
++        <OutputType>Exe</OutputType>
++        <TargetFramework>netcoreapp3.1</TargetFramework>
++    </PropertyGroup>
++
++</Project>
+Index: Program.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Program.cs	(date 1584180311362)
++++ Program.cs	(date 1584180311362)
+@@ -0,0 +1,85 @@
++using System;
++using System.Net.Security;
++using System.Security.Cryptography;
++
++class Human
++{
++    private static int _id = 0;
++    private int _age;
++    private int _height;
++    private int _weight;
++    private readonly string _name;
++    private readonly string _sex;
++    private readonly string _country;
++
++    public Human(int age, int height, int weight, string name, string country, string sex)
++    {
++        if (age > 0) this._age = age;
++        if (height > 0) this._height = height;
++        if (weight > 0) this._weight = weight;
++        this._name = name;
++        this._country = country;
++        this._sex = sex;
++        _id++;
++    }
++
++    public string HumanStats()
++    {
++        return
++            $"Name:{_name} \n Sex:{_sex} \n Height:{_height} cm \n Weight={_weight} kg \n Age={_age} ya \n Country:{_country} \n id={_id}";
++    }
++
++    public string Name => _name;
++    public string Country => _country;
++    public int Age => _age;
++
++    public void HumanStats(int height, int weight, int age)
++    {
++        this._height = height;
++        this._weight = weight;
++        this._age = age;
++    }
++}
++
++class Humanity
++{
++    private readonly Human _people1 = new Human(1, 2, 3, "john", "5", "1");
++    private readonly Human _people2 = new Human(8, 8, 3, "not john", "5", "1");
++    
++    public void MenuStart()
++    {
++        bool m = true;
++        while (m)
++        {
++            Console.Write("change-1\nshow human-2\nend program-3\n");
++            var s = Console.ReadLine();
++             var index = int.Parse(s);
++            switch (index)
++            {
++                case 1:
++                    _people1.HumanStats(20, 20, 20);
++                    break;
++                case 2:
++                    Console.WriteLine(_people1.HumanStats());
++                    Console.WriteLine(_people2.HumanStats());
++                    break;
++                case 3:
++                    m = false;
++                    break;
++                
++            }
++        }
++    }
++}
++
++namespace LAB3
++{
++    class Program
++    {
++        static void Main(string[] args)
++        {
++            Humanity first = new Humanity();
++            first.MenuStart();
++        }
++    }
++}
+\ No newline at end of file
+Index: LAB3.sln
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- LAB3.sln	(date 1584106649871)
++++ LAB3.sln	(date 1584106649871)
+@@ -0,0 +1,16 @@
++
++Microsoft Visual Studio Solution File, Format Version 12.00
++Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB3", "LAB3.csproj", "{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}"
++EndProject
++Global
++	GlobalSection(SolutionConfigurationPlatforms) = preSolution
++		Debug|Any CPU = Debug|Any CPU
++		Release|Any CPU = Release|Any CPU
++	EndGlobalSection
++	GlobalSection(ProjectConfigurationPlatforms) = postSolution
++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
++		{8FA9E32F-931F-46CF-A9E7-8BF8E0EF04EE}.Release|Any CPU.Build.0 = Release|Any CPU
++	EndGlobalSection
++EndGlobal
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(date 1584106653200)
++++ .gitignore	(date 1584106653200)
+@@ -0,0 +1,3 @@
++bin/
++obj/
++/packages/
+\ No newline at end of file
