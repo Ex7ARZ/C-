@@ -11,11 +11,8 @@ namespace LAB3
         Fourth
     };
 
-    public abstract class Student : Human1,IProfit,ICompare
+    public abstract class Student : Human1, IProfit 
     {
-        
-
-        
         private readonly string _university;
 
         private Course _s;
@@ -38,26 +35,23 @@ namespace LAB3
 
         public void ChangeCourse(Course n)
         {
-          
-                _s =  n;
+            _s = n;
         }
 
-        public abstract double GetSr();
+        public abstract void SetSr();
+
         //-------------------------------------------------------------------------------------------------------------
         public abstract string StudyForm { get; set; }
         public double ScholarShip { get; set; } = 0;
 
 
-        public abstract bool IsScholarship(string StudyF);
-       
+        public abstract bool IsScholarship();
+
 
         public abstract void Set_Scolarship(double a = 0);
-       
+
 
         public abstract void Info();
-        public abstract int CompareTo(double a, double b);
-
-        public abstract void Change(int a);
-
+        
     }
 }

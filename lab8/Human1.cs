@@ -6,7 +6,8 @@
         private readonly string _sex;
         private int _height;
         private int _weight;
-        protected int wallet=10;
+        
+
         protected Human1(int age, int height, int weight, string name, string country, string sex)
         {
             if (age > 0) Age = age;
@@ -29,15 +30,16 @@
             return
                 $"Name:{Name} \n Sex:{_sex} \n Height:{_height} cm \n Weight={_weight} kg \n Age={Age} ya \n Country:{Country} \n id={_id}";
         }
-        public string RetName()=>Name;
+
+        public string RetName() => Name;
         public int RetId() => _id;
         public string RetCountry() => Country;
+
         public void HumanStats(int height, int weight, int age)
         {
             _height = height;
             _weight = weight;
             Age = age;
         }
-      
     }
 }

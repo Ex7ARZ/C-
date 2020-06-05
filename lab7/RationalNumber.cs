@@ -1,119 +1,92 @@
 ﻿#nullable enable
 using System;
-using System.Collections.Generic;
 using System.Numerics;
 
 namespace Lab7
 {
-    public class RationalNumber: IComparer<RationalNumber>,IComparable
+    public class RationalNumber : IComparable
     {
         private int _m;
- 
+        private int _n;
+
         public RationalNumber(int n, int m)
         {
-            N = n;
+            _n = n;
             _m = (m > 0) ? m : 1;
         }
- 
-        public int N { get; set; }
 
-        public int M
-        {
-            get => _m;
-            set
-            {
-                if (value > 0)
-                    _m = value;
-                else
-                    throw new Exception("Число должно быть натуральным!");
-            }
-        }
- 
+        public int N => _n;
+
+        public int M => _m;
+
         public static RationalNumber operator +(RationalNumber a, RationalNumber b) //перекрытие мат операций
         {
             RationalNumber result = new RationalNumber(1, 1);
 
-            if (a._m != b._m) 
+            if (a._m != b._m)
             {
                 result._m = a._m * b._m;
-                result.N = a._m * b.N + a.N * b._m;
+                result._n = a._m * b._n + a._n * b._m;
             }
             else
             {
                 result._m = a._m;
-                result.N =  a.N +  b.N;
+                result._n = a._n + b._n;
             }
 
             return result;
         }
+
         public static bool operator >(RationalNumber a, RationalNumber b)
         {
             RationalNumber result = new RationalNumber(1, 1);
 
             if (a._m != b._m)
-                return a._m * b.N > a.N * b._m;
-            else return a.N > b.N;
-            
+                return a._m * b._n > a._n * b._m;
+            else return a._n > b._n;
         }
+
         public static bool operator <(RationalNumber a, RationalNumber b)
         {
             RationalNumber result = new RationalNumber(1, 1);
 
             if (a._m != b._m)
-                return a._m * b.N < a.N * b._m;
-            else return a.N < b.N;
+                return a._m * b._n < a._n * b._m;
+            else return a._n < b._n;
         }
 
-        public int Compare(RationalNumber x, RationalNumber y)//просто сравнение 2 объектов
+        public override string ToString() //перевод объекта в строку
         {
-            if (x > y)
-                return 1;
-            else if (x < y)
-                return -1;
-            else
-                return 0;
+            return string.Format("{0}/{1} ", _n, _m);
         }
 
-        public override string ToString()//перевод объекта в строку
-        {
-            return string.Format("{0}/{1} ", N, _m);
-            
-        }
-
-        public int CompareTo(object? obj)//сравнения для сортировки
+        public int CompareTo(object? obj) //сравнения для сортировки
         {
             RationalNumber p = obj as RationalNumber;
-            if (p != null  )
-               
-                return (this.N /this._m).CompareTo(p.N /p._m);
+            if (p != null)
+
+                return (this._n / this._m).CompareTo(p._n / p._m);
             else
                 throw new Exception("Невозможно сравнить два объекта");
         }
 
-
-     
-        
-        
-        
-        
-        public static explicit operator double(RationalNumber obj)//перекрытия явного приведения типов
+        public static explicit operator double(RationalNumber obj) //перекрытия явного приведения типов
         {
-            
-            return  (double)obj.N / obj._m;
+            return (double) obj._n / obj._m;
         }
+
         public static explicit operator int(RationalNumber obj)
         {
-            
-            return  obj.N / obj._m;
+            return obj._n / obj._m;
         }
 
-      
-        public static explicit operator RationalNumber(string s)//из строки в объект
+
+        public static RationalNumber Parse(string s) //из строки в объект
         {
-            
-            var num = Convert.ToDouble(s);
+            var num = double.Parse(s);
+            // var num = Convert.ToDouble(s);
             var counter = 0;
-            while ( /*num % 1 != 0*/ num > (int) num)
+            while (num > (int) num)
             {
                 num *= 10;
                 counter++;
@@ -140,8 +113,8 @@ namespace Lab7
             var gcd = n;
             first /= gcd;
             second /= gcd;
-            var a=new RationalNumber((int)first,(int)second);
-            return a; 
+            var a = new RationalNumber((int) first, (int) second);
+            return a;
         }
     }
 }

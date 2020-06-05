@@ -29,7 +29,8 @@ namespace Lab7
 
           
           const string s = "1,25";
-          RationalNumber ss = (RationalNumber)s;
+          RationalNumber ss = RationalNumber.Parse(s);
+          //RationalNumber ss = (RationalNumber)s;
           Console.WriteLine(ss.N);
           Console.WriteLine(ss.M);
           Console.WriteLine(ss.ToString());  
