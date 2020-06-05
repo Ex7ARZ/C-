@@ -3,18 +3,16 @@
     public interface IProfit
     {
         string StudyForm { get; set; }
-        double  ScholarShip { get; set; }
-        bool IsScholarship(string StudyF);
-       void Set_Scolarship(double a = 0);
+        double ScholarShip { get; set; }
+        bool IsScholarship();
+        void Set_Scolarship(double a = 0);
         void Info();
     }
-    
-    public interface ICompare
+
+
+    public interface IComparable<in T>
 
     {
-
-        int CompareTo(double a,double  b);
-        void Change(int a);
-
+        int CompareTo(T other);
     }
 }

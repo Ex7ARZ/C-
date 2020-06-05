@@ -11,16 +11,3 @@ C:\Users\Lenovo\RiderProjects\LAB3\obj\Debug\netcoreapp3.1\LAB3.dll
 C:\Users\Lenovo\RiderProjects\LAB3\obj\Debug\netcoreapp3.1\LAB3.pdb
 C:\Users\Lenovo\RiderProjects\LAB3\obj\Debug\netcoreapp3.1\LAB3.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\RiderProjects\LAB3\obj\Debug\netcoreapp3.1\LAB3.genruntimeconfig.cache
-D:\C-\lab6\bin\Debug\netcoreapp3.1\LAB3.exe
-D:\C-\lab6\bin\Debug\netcoreapp3.1\LAB3.deps.json
-D:\C-\lab6\bin\Debug\netcoreapp3.1\LAB3.runtimeconfig.json
-D:\C-\lab6\bin\Debug\netcoreapp3.1\LAB3.runtimeconfig.dev.json
-D:\C-\lab6\bin\Debug\netcoreapp3.1\LAB3.dll
-D:\C-\lab6\bin\Debug\netcoreapp3.1\LAB3.pdb
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.csprojAssemblyReference.cache
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.csproj.CoreCompileInputs.cache
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.AssemblyInfoInputs.cache
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.AssemblyInfo.cs
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.dll
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.pdb
-D:\C-\lab6\obj\Debug\netcoreapp3.1\LAB3.genruntimeconfig.cache

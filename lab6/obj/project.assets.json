@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C-\\lab6\\LAB3.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\RiderProjects\\LAB3\\LAB3.csproj",
       "projectName": "LAB3",
-      "projectPath": "D:\\C-\\lab6\\LAB3.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\RiderProjects\\LAB3\\LAB3.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\C-\\lab6\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\RiderProjects\\LAB3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
